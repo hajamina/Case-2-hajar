@@ -13,15 +13,18 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
 
-#%%
+
+# In[147]:
+
 
 print("Current working directory: {0}".format(os.getcwd()))
 
-#%%
 
-employee = pd.read_csv('/Users/youssrakacha/Downloads/Minor Data Science/Employee.csv', delimiter = ',')
-performancerate = pd.read_csv('/Users/youssrakacha/Downloads/Minor Data Science/PerformanceRating.csv', delimiter = ',')
+# In[149]:
 
+
+employee = pd.read_csv('Employee.csv', delimiter = ',')
+performancerate = pd.read_csv('PerformanceRating.csv', delimiter = ',')
 #combineren van de datasets 
 performancerate['ReviewDate'] = pd.to_datetime(performancerate['ReviewDate'])  # Zorg dat de aanstellingsdatum in datetime-formaat is
 recent_performance = performancerate.loc[performancerate.groupby('EmployeeID')['ReviewDate'].idxmax()]
