@@ -1,8 +1,7 @@
 seaborn
-pandas 
+pandas
 numpy
 streamlit
-scikit-learn 
+scikit-learn
 matplotlib
 plotly
-os
