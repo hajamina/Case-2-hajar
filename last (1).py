@@ -1,4 +1,3 @@
-
 import os
 import streamlit as st
 import seaborn as sns
@@ -763,6 +762,16 @@ st.write("""
 Het classificatierapport toont de prestaties van het model in termen van precision, recall en F1-score voor beide klassen (werknemers die blijven en werknemers die vertrekken). 
 Een hogere F1-score betekent dat het model beter presteert in het voorspellen van die klasse.
 """)
+
+
+
+
+
+
+
+
+
+
 
 
 
